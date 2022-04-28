@@ -46,6 +46,7 @@ OLC0637 <- ggplot(logCFU_0637,aes(x = Incubation_Time, y = logCFU_AVG,
                 width = 0.25) +
   labs(x = "Incubation Time (h)", y = "log CFU/mL") +
   scale_x_continuous(breaks = c(0,1,2,3,4,5,6,7,20)) +
+  ylim(5,9.5) +
   theme(legend.position = "right",
         plot.title = element_text(size = 9, face = 'bold', color = 'black'),
         axis.text = element_text(size = 10),
@@ -68,6 +69,7 @@ OLC1512 <- ggplot(logCFU_1512,aes(x = Incubation_Time, y = logCFU_AVG,
                 width = 0.25) +
   labs(x = "Incubation Time (h)", y = "log CFU/mL") +
   scale_x_continuous(breaks = c(0,1,2,3,4,5,6,7,20)) +
+  ylim(5,9.5) +
   theme(legend.position = "right",
         plot.title = element_text(size = 9, face = 'bold', color = 'black'),
         axis.text = element_text(size = 10),
@@ -90,6 +92,7 @@ OLC3094 <- ggplot(logCFU_3094,aes(x = Incubation_Time, y = logCFU_AVG,
                 width = 0.25) +
   labs(x = "Incubation Time (h)", y = "log CFU/mL") +
   scale_x_continuous(breaks = c(0,1,2,3,4,5,6,7,20)) +
+  ylim(5,9.5) +
   theme(legend.position = "right",
         plot.title = element_text(size = 9, face = 'bold', color = 'black'),
         axis.text = element_text(size = 10),
@@ -112,6 +115,7 @@ OLC3095 <- ggplot(logCFU_3095,aes(x = Incubation_Time, y = logCFU_AVG,
                 width = 0.25) +
   labs(x = "Incubation Time (h)", y = "log CFU/mL") +
   scale_x_continuous(breaks = c(0,1,2,3,4,5,6,7,20)) +
+  ylim(5,9.5) +
   theme(legend.position = "right",
         plot.title = element_text(size = 9, face = 'bold', color = 'black'),
         axis.text = element_text(size = 10),
