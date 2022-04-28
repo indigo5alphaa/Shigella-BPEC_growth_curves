@@ -18,12 +18,20 @@ logCFU_Growth_Curve <- Growth_Curve_0_20h_Clean %>%
          logCFU_AVG = as.numeric(logCFU_AVG),
          logCFU_SD = as.numeric(logCFU_SD))
 
+
+# separate logCFU data by BPEC strains ------------------------------------
+
+
 library(dplyr)
 
 logCFU_0637 <- filter(logCFU_Growth_Curve, EC_ID %in% c('OLC1614', 'OLC0637'))
 logCFU_1512 <- filter(logCFU_Growth_Curve, EC_ID %in% c('OLC1614', 'OLC1512'))
 logCFU_3094 <- filter(logCFU_Growth_Curve, EC_ID %in% c('OLC1614', 'OLC3094'))
 logCFU_3095 <- filter(logCFU_Growth_Curve, EC_ID %in% c('OLC1614', 'OLC3095'))
+
+
+# ggplot graphs -----------------------------------------------------------
+
 
 library(ggplot2)
 
