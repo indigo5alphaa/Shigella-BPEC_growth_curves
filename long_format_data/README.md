@@ -1,0 +1,1 @@
+logCFU in long format
